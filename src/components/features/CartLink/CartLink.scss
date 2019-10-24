@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.cart-link-wrapper {
+   @media (max-width: 767px) {
+      &.menu-hidden {
+         display: none;
+      }
+   }
+}
+
+.cart-link {
+   color: $text-color;
+   font-size: 14px;
+   font-weight: 700;
+
+   &:hover {
+      text-decoration: none;
+      color: $text-color;
+   }
+
+   &__icon {
+      color: $text-color;
+      font-size: 24px;
+      transition: 0.3s;
+
+      &:hover {
+         color: $primary-color;
+      }
+   }
+
+   .fa-shopping-cart {
+      font-size: 24px;
+      padding-right: 5px;
+   }
+}

@@ -1,0 +1,8 @@
+@import '../../../styles/variables.scss';
+
+.faq {
+    &__question {
+        margin-top: 30px;
+        font-family: $main-font;
+    }
+}

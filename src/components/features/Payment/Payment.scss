@@ -1,0 +1,43 @@
+@import '../../../styles/variables.scss';
+
+.payment {
+   width: 100%;
+   padding: 20px;
+   background-color: $main-bg;
+   border: 1px solid $light-border;
+   text-align: center;
+
+   &__amount span,
+   &__discount span {
+      font-weight: bold;
+      font-size: larger;
+   }
+
+   &__input {
+      margin: 0 10px;
+      padding: 5px 10px;
+   }
+
+   &__pay-button {
+      display: block;
+      margin: 20px auto;
+      font-family: $main-font;
+      padding: 10px 20px;
+   }
+
+   &__link {
+      width: 100%;
+      height: 100%;
+   }
+
+   &__back-to-cart {
+      background-color: transparent;
+      border: 2px solid $primary-color;
+      color: $primary-color;
+
+      &:hover {
+         background-color: $main-bg;
+         color: $primary-color;
+      }
+   }
+}

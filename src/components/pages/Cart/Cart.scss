@@ -1,0 +1,58 @@
+@import '../../../styles/variables.scss';
+
+.cart {
+    text-align: right;
+    padding-top: 30px;
+
+    @media (max-width: 767px) {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .go-back {
+        @media (max-width: 767px) {
+            margin-top: 10px;
+        }
+    }
+
+    &--empty {
+        text-align: center;
+    }
+
+    &__info {
+        font-family: $main-font;
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
+    &__amount {
+        text-align: right;
+
+        @media (max-width: 767px) {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            margin-top: 0;
+        }
+    }
+
+    &__button {
+        margin-top: 30px;
+        font-family: $main-font;
+        padding: 10px 20px;
+    }
+}

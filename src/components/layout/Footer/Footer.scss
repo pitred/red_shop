@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.footer {
+   min-height: 60px;
+   background-color: $main-bg;
+   border-top: 1px solid $light-border;
+   padding-top: 25px;
+   padding-bottom: 10px;
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__text {
+      margin: 0;
+
+      span {
+         font-family: 'Parisienne', cursive;
+         color: $primary-color;
+         font-size: larger;
+      }
+   }
+
+   .menu {
+      @media (max-width: 767px) {
+         display: none;
+      }
+   }
+}

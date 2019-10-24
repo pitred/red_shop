@@ -1,0 +1,20 @@
+@import "../../../styles/variables.scss";
+
+.button {
+    background-color: $primary-color;
+    color: $main-bg;
+    font-size: 18px;
+    padding: 5px 15px;
+    border: 0;
+    transition: .4s;
+
+    &:hover {
+        box-shadow: 3px 3px 8px $box-shadow-color;
+        background-color: darken($primary-color, 8%);
+        transform: scale(1.02);
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}

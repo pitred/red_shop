@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.filter-button {
+   color: $text-color;
+   display: none;
+   height: 30px;
+   align-items: center;
+   border: 1px solid $primary-color;
+   border-radius: 15px;
+   padding: 0 15px;
+   position: fixed;
+   bottom: 15px;
+   right: 15px;
+   font-size: 15px;
+   font-weight: 700;
+   text-shadow: 1px 1px 1px $main-bg;
+   z-index: 20;
+   transition: 0.4s;
+
+   @media (max-width: 767px) {
+      display: flex;
+   }
+}

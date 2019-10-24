@@ -1,0 +1,81 @@
+@import '../../../styles/variables.scss';
+
+.menu {
+   height: 50px;
+
+   @media (max-width: 767px) {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+
+      &.menu-hidden {
+         opacity: 0;
+         visibility: hidden;
+         margin-top: -250px;
+      }
+   }
+
+   &__list {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+
+      @media (max-width: 767px) {
+         flex-direction: column;
+         margin-top: 15px;
+         align-items: flex-start;
+      }
+   }
+
+   &__item {
+      @media (max-width: 767px) {
+         margin: 10px 0;
+      }
+   }
+
+   &__link,
+   &__link:visited {
+      padding: 10px 20px;
+      text-transform: capitalize;
+      font-size: 20px;
+      font-family: $main-font;
+      color: $text-color;
+      transition: 0.4s;
+      position: relative;
+
+      &::after {
+         display: block;
+         content: '';
+         width: 0;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-top: 1px solid $primary-color;
+         border-bottom: 1px solid $primary-color;
+         transition: 0.4s;
+      }
+
+      &:hover {
+         color: $primary-color;
+         text-decoration: none;
+         font-weight: 900;
+
+         &::after {
+            width: 100%;
+         }
+      }
+
+      @media (min-width: 767px) and (max-width: 991px) {
+         padding: 10px;
+      }
+
+      &--active {
+         color: $primary-color;
+      }
+   }
+}

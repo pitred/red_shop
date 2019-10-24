@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: $main-bg;
+   box-shadow: 3px 3px 8px $box-shadow-color;
+   z-index: 10;
+   transition: 0.4s;
+
+   &__mobile-view {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+         width: 100%;
+      }
+   }
+
+   &__logo-link:hover {
+      text-decoration: none;
+   }
+}

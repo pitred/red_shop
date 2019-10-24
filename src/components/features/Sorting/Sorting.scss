@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.sorting {
+   padding: 30px;
+
+   @media (max-width: 767px) {
+      padding: 0 15px;
+   }
+
+   &__heading {
+      margin-bottom: 30px;
+
+      @media (max-width: 575px) {
+         display: none;
+      }
+
+      @media (max-width: 767px) {
+         font-size: 18px;
+      }
+   }
+
+   &__link {
+      color: $text-color;
+      text-decoration: none;
+
+      &:hover {
+         text-decoration: none;
+      }
+   }
+
+   &__item {
+      transition: 0.4s;
+      margin: 10px 0;
+
+      @media (max-width: 767px) {
+         font-size: 14px;
+      }
+
+      &:hover,
+      &.active-filter {
+         color: $primary-color;
+         font-weight: 900;
+      }
+   }
+}
