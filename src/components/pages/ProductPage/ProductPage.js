@@ -12,7 +12,7 @@ const ProductPage = ({ products, addProduct, ...props }) => {
    return (
       <Fade timeout={100} className='product-page'>
          <div className='go-back' onClick={props.history.goBack}>
-            <i className='fas fa-arrow-left go-back__icon'></i>
+            <i className='fa fa-arrow-left go-back__icon'></i>
             Back
          </div>
          <div className='product'>
